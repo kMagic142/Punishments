@@ -1,0 +1,43 @@
+database:
+  database: "punishments"
+  host: "localhost"
+  port: "3306"
+
+  username: "dev"
+  password: "password"
+
+  table-prefix: "punishments_"
+
+# Placeholders:
+# %admin%: The username of the user
+# %player%: The target's username
+# %time%: The time remaining
+# %reason%: The reason
+# %id%: The punishment ID
+messages:
+  punishments:
+    only-players: "&cOnly players can execute this command!"
+    no-permission: "&cYou don't have permission to execute this command!"
+    unknown-command: "&cCommand not found! Use /punishments help for more info."
+    unknown-player: "&cCould not find player by the name of %player%!"
+
+    ban-message: "&cYou are temporarily banned from this server for &f%time%&c!\n\n&7Reason: &f%reason%\n&7Banned by: &f%admin%\n&7Ban ID: &f%id%"
+    perm-ban-message: "&cYou are permanently banned from this server!\n\n&7Reason: &f%reason%\n&7Banned by: &f%admin%\n&7Ban ID: &f%id%"
+
+    ban-broadcast-message: "&f%admin%&c has banned &f%player%&c for &f%reason%&c, and expires in &f%time%&c."
+    perm-ban-broadcast-message: "&f%admin%&c has permanently banned &f%player%&c for &f%reason%&c."
+    unban-broadcast-message: "&f%admin%&c has unbanned &f%player%&c."
+
+    mute-message: "&cYou are temporarily muted on this server for &f%time%&c!\n\n&7Reason: &f%reason%\n&7Muted by: &f%admin%\n\n&7Mute ID: &f%id%"
+    perm-mute-message: "&cYou are permanently muted on this server!\n\n&7Reason: &f%reason%\n&7Muted by: &f%admin%\n&7Mute ID: &f%id%"
+
+    mute-broadcast-message: "&f%admin%&c has muted &f%player%&c for &f%reason%&c, and expires in &f%time%&c."
+    perm-mute-broadcast-message: "&f%admin&c has permanently muted &f%player%&c for &%f%reason%&c."
+    unmute-broadcast-message: "&f%admin%&c has unmuted &f%player%&c."
+
+    kick-message: "&cYou have been kicked from this server!\n\n&7Reason: &f%reason%\n&7Kicked by: &f%admin%"
+    kick-broadcast-message: "&f%admin%&c has kicked &f%player%&c for &f%reason%&c."
+
+    blacklist-message: "&cYou are blacklisted from this server!\n\n&7Reason: &f%reason%\n&7Banned by: &f%admin%\n&7Blacklist ID: &f%id%"
+    unblacklist-broadcast-message: "&f%admin%&c has unblacklisted &f%player%&c."
+    blacklist-broadcast-message: "&f%admin%&c has permanently blacklisted &f%player%&c for &f%reason%&c."

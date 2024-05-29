@@ -1,0 +1,16 @@
+name: Punishments
+version: ${project.version}
+main: ro.kmagic.punishments.Punishments
+api-version: 1.16
+prefix: Punishments
+database: true
+commands:
+  punishments:
+    description: Main command for the punishments plugin
+  ban:
+  unban:
+  mute:
+  unmute:
+  kick:
+  blacklist:
+  unblacklist:
